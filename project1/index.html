@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/svg+xml" href="../img/icon.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Parallax</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Project "Parallax"</div>
+						<div class="layers__title">Fairy Forest</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+		
+			<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+				<div class="main-article__content">
+					<h2 class="main-article__header">Fairy Forest</h2>
+					<p class="main-article__paragraph">This ancient forest, shrouded in eternal gloom, is hidden from prying eyes somewhere on the edge of the real world and the magical one. Its paths meander like a living thing, changing direction for each traveler, and the air is filled with the sweet scent of flowers that have never seen sunlight. The Forest of Shimmering Shadows is lit only by the soft light of fireflies that swirl around old trees whose branches reach upward as if trying to touch the moon.</p>
+				</div>
+				<!-- <div class="copy">© Shyposh Artem</div> -->
+			</article>
+
+			<main class="blockGallery" style="background-image: url(img/underground.jpg);">
+				<div class="gallery">
+					<div data-speed=".9" class="gallery__left">
+						<img class="gallery__item" src="./img/card 1.png" alt="">
+						<div class="text-block gallery__item">
+							<h2 class="text-block_h">Sova</h2>
+							<p class="text-block__p">An ancient guardian of the forest with a body resembling a tangle of roots and branches, glowing eyes reflecting the wisdom of the ages, and lights swirling around him as symbols of his magical power.</p>
+						</div>
+					</div>
+					<div data-speed="1.1" class="gallery__right">
+						<div class="text-block gallery__item text-block__right">
+							<h2 class="text-block_h">Olen</h2>
+							<p class="text-block__p">The mysterious spirit of the night forest, with fiery eyes and a body woven of shadows and branches, guards the harmony of nature.</p>
+						</div>
+						<img class="gallery__item" src="./img/card 2.png" alt="">
+					</div>
+				</div>
+				<div class="copy">© Shyposh Artem</div>
+			</main>
+
+		</div>
+	</div>
+
+
+</body>
+</html>
