@@ -59,7 +59,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     /* margin-top: 200px; */
 }
 
@@ -93,6 +93,7 @@ html, body {
     transition: transform 1.25s var(--transition_Gallary), filter 3s var(--transition_Gallary);
     will-change: transform, filter;
 }
+
 .items .item:hover{ 
     filter: inherit;
     transform: translateZ(calc(var(--index) * 8));
@@ -116,11 +117,7 @@ html, body {
     transform: translateZ(calc(var(--index) * 5)) rotateY(20deg);
     z-index: 1;
 }
-/* .items .item:hover + * + * {
-    filter: grayscale() brightness(0.2);
-    transform: translateZ(calc(var(--index) * 4));
-    z-index: -2;
-} */
+
 
 /* Left */
 
@@ -128,11 +125,6 @@ html, body {
     filter: grayscale() brightness(0.5);
     transform: translateZ(calc(var(--index) * 5)) rotateY(-20deg);
 }
-/* .items .item:has(+ * + :hover) {
-    filter: grayscale() brightness(0.2);
-    transform: translateZ(calc(var(--index) * 4));
-} */
-
 
 .copy {
 	bottom: 15;
