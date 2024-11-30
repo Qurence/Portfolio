@@ -9,3 +9,22 @@ new Swiper('.slider', {
     parallax: true,
     freeMode: true,
 })
+
+document.querySelectorAll('.item').forEach(item => {
+    item.addEventListener('mouseover', (e) => {
+        const textContainer = document.getElementById('text-container');
+        const text = e.target.getAttribute('data-text');
+        textContainer.innerText = text;
+        textContainer.style.display = 'block';
+    });
+
+    item.addEventListener('mouseleave', () => {
+        const textContainer = document.getElementById('text-container');
+        textContainer.style.display = 'none';
+    });
+});
+
+
+
+
+
