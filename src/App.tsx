@@ -82,11 +82,11 @@ function App() {
       technologies: ['HTML', 'CSS', 'JS', 'GSAP'],
     },
     {
-      title: 'Сайт11',
-      description: 'A modern web application built with React',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97',
-      link: '#',
-      technologies: ['HTML', 'CSS', 'Tailwind'],
+      title: 'Witcher',
+      description: t.projects.descProject2,
+      image: 'project2/img/demo.png',
+      link: 'project2/index.html',
+      technologies: ['HTML', 'CSS', 'JS', 'SwiperJS'],
     },
     {
       title: 'Сайт1',

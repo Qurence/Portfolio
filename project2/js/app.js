@@ -1,6 +1,6 @@
 new Swiper('.slider', {
     speed : 2400,
-    direction: 'vertical',
+    // direction: 'vertical',
     mousewheel: {
         enabled: true,
         sensitivity: 3
