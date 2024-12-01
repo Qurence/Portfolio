@@ -21,7 +21,8 @@ export const translations = {
       title: 'My Projects',
       viewProject: 'View Project',
       descProject1: 'A site with a developed parallax effect, as well as the use of a library GSAP for smooth scrolling',
-      descProject2: 'Simple website with a gallery with parallax effect with SwiperJS'
+      descProject2: 'Simple website with a gallery with parallax effect with SwiperJS',
+      descProject3: 'A project in which perspective work was implemented to achieve a 3D effect that responds to mouse movement ',
     },
     scrollTop: 'Scroll to Top',
     contactForm: { // Перевод для формы связи
@@ -56,7 +57,8 @@ export const translations = {
       title: 'Мої Проекти',
       viewProject: 'Переглянути',
       descProject1: 'Сайт з ефектом паралакса, а також використанням бібліотеки GSAP для плавної прокрутки',
-      descProject2: 'Простий веб-сайт з галереєю з ефектом паралакса за допомогою SwiperJS'
+      descProject2: 'Простий веб-сайт з галереєю з ефектом паралакса за допомогою SwiperJS',
+      descProject3: 'Проект, в якому реалізована робота з перспективою, щоб досягти 3D єфекту, який реагує на рух миші ',
     },
     scrollTop: 'Вгору',
     contactForm: { // Перевод для формы связи
