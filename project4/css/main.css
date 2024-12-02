@@ -247,16 +247,17 @@ body {
 }
 
 .section__items {
-    width: 50%;
-    height: 300vh;
+    width: 52%;
+    height: 260vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 100px;
+    gap: 0px 60px;
     /* line-gap-override: 100px; */
-    row-gap: 10px;
-    padding: 16px;
+    /* row-gap: 10px; */
+    padding: 15px 15px 200px;
+    margin-bottom: 150px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .item {
@@ -297,7 +298,7 @@ body {
     position: absolute;
     width: 850px;
     height: 850px;
-    margin-top: -650px;
+    margin-top: -750px;
     right: 0;
     z-index: -1;
 }
@@ -306,7 +307,7 @@ body {
     overflow: hidden;
     width: 750px;
     height: 750px;
-    margin-top: -630px;
+    margin-top: -650px;
     margin-right: 70px;
     pointer-events: none;
 }
@@ -324,7 +325,7 @@ body {
 /* ________________Section_How________________ */
 
 .section__how {
-    width: 50vw;
+    width: 80vw;
     height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -354,7 +355,7 @@ body {
 }
 
 .section__left_up .fade{
-    width: 80%;
+    width: 87%;
     height: 120px;
     margin-left: 20px;
     margin-top: 12%;
@@ -363,6 +364,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 20px;
 }
 
 .blue__text {
@@ -379,6 +381,7 @@ body {
     margin-left: 40px;
     margin-right: 25px;
 }
+
 
 
 .section__right .fade{
@@ -417,6 +420,7 @@ body {
     width: 100%;
 }
 
+
 .right__text {
     font-family: Gilroy-font;
     align-content: center;
@@ -425,6 +429,42 @@ body {
     margin-top: 20px;
 }
 
+.section__right {
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
 .right__text span{
     display: block;
+}
+
+
+.box {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+    position: relative;
+    margin-left: 20px;
+}
+
+.section__right .fade {
+    margin-top: -50px;
+    z-index: -1;
+    height: 150px;
+    line-height: 20px;
+}
+
+.section__right__under-text {
+    font-family: Gilroy-font;
+    width: 60%;
+    /* margin: 20px auto 0; */
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.section__right__under-text span {
+    color: #D7A369;
 }
