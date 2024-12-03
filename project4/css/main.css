@@ -266,6 +266,7 @@ body {
         width: 100%;
     }
 
+
     .section1__left-text{
         position: relative;
         margin: 0 auto;
@@ -391,7 +392,7 @@ body {
 @media (max-width: 1370px) {
 
     .text-items {
-        margin-top: calc(var(--index) * -25);
+        margin-top: calc(var(--index) * 1);
     }
 
     .block__ticket * {
