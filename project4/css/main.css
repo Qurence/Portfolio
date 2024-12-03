@@ -40,7 +40,7 @@ body {
 
 .container {
     position: absolute;
-    margin-top: 30vh;
+    margin-top: 10vh;
     margin-left: 17vw;
 }
 
@@ -90,6 +90,15 @@ body {
 @media (max-width: 1370px) {
     .container{
         margin-left: 2vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .container iframe{
+        width: calc(var(--index) * 30);
+        height: calc(var(--index) * 15);
+        margin-top: 70vh;
+        position: absolute;
     }
 }
 
@@ -147,6 +156,9 @@ body {
         padding-top: calc(var(--index) * 0.4);
         padding-bottom: calc(var(--index) * 0.4);
     }
+    .info__text_p {
+        font-size: calc(var(--index) * 1);
+    }
 }
 /* ____________________Section1_____________________ */
 
@@ -180,7 +192,7 @@ body {
 
 .section1__left-text {
     font-family: AALumus-font;
-    font-size: calc(var(--index) * 3); 
+    font-size: calc(var(--index) * 2.8); 
     font-weight: 100;
     line-height: calc(var(--index) * 2.3);
 }
@@ -257,6 +269,7 @@ body {
     
 }
 
+
 @media (max-width: 1370px) {
 
     .section1__left_p li {
@@ -297,6 +310,48 @@ body {
 
     .section1__right__img {
         margin-left: calc(2vw * 15);
+    }
+}
+
+@media (max-width: 500px) {
+    .container_info{
+        position: relative;
+    }
+    .info {
+        overflow: hidden;
+    }
+    .section1 {
+        /* margin-top: 0px; */
+        margin: 0 auto;
+        height: calc(var(--index) * 60);
+        width: 100%;
+    }
+
+    .section1__section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: calc(var(--index) * 1) auto;
+        margin-left: 15%;
+        width: 100%;
+    }
+
+    .section1__left {
+        /* margin: 0 auto; */
+        justify-content: center;
+    }
+
+    .section1__left_p li {
+        line-height: calc(var(--index) * 1.2);
+        width: 70%;
+    }
+
+    .section1__section .fade {
+        width: 70%;
+        height: calc(var(--index) * 20);
+    }
+
+    .section1__right__img {
+        margin-left: calc(2vw * 2);
     }
 }
 
@@ -444,6 +499,18 @@ body {
     .item__text{
         width: 50%;
         margin: calc(var(--index)) auto calc(var(--index) * 1.1);
+    }
+}
+
+@media (max-width: 500px) {
+    .section__items {
+        width: 90%;
+        height: calc(var(--index) * 300);
+        display: grid;
+        gap: 0px calc(var(--index) * 1.4);
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 0px calc(var(--index));
+        gap: calc(var(--index) / 2);
     }
 }
 
@@ -598,7 +665,6 @@ body {
         width: 100%;
     }
 
-    
 
     .section__left {
         width: 95%;
@@ -656,13 +722,14 @@ body {
         z-index: -1;
         height: calc(var(--index) * 7);
         line-height: 20px;
-        margin: -50px auto 0;
+        margin: -20px auto 0;
     }
     
     .blue__text p {
         margin-left: calc(var(--index) * .7);
         margin-right: 25px;
         text-align: center;
+        font-size: calc(var(--index) * 1);;
     }
 
     .section__right__under-text {
@@ -676,6 +743,16 @@ body {
     .section__right__under-text p {
         max-width: 90%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .left__mark__text {
+        margin-top: calc(var(--index) * 7);
+    }
+
+    .right__text {
+        margin-top: calc(var(--index) * 7);
     }
 }
 
@@ -746,7 +823,7 @@ body {
 
 @media (max-width: 1370px) {
     .footer {
-        margin-top: 250px;
+        margin-top: calc(var(--index) * 40);
     }
     .footer__text {
         margin: calc(var(--index) * 15) auto 0px;
@@ -768,7 +845,25 @@ body {
     }
 
     .footer__button {
-        margin-top: calc(var(--index) * 15);
+        margin-top: calc(var(--index) * 2);
     }
 
+
+    @media (max-width: 500px) {
+        .footer {
+            margin-top: 500px;
+        }
+
+        .footer__text_h {
+            font-family: AALumus-font;
+            margin: 0 auto;
+            font-size: calc(var(--index) * 3);
+            width: 50%;
+            line-height: 55px;
+            margin-top: 85px;
+        }
+        .footer__button {
+            margin-top: calc(var(--index) * 30);
+        }
+    }
 }
