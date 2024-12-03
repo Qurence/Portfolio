@@ -768,6 +768,10 @@ body {
     .right__text {
         margin-top: calc(var(--index) * 7);
     }
+
+    .section__left__left {
+        margin-left: 0px;
+    }
 }
 
 /* _________Footer_________________ */
