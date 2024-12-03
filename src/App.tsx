@@ -97,10 +97,10 @@ function App() {
     },
     {
       title: 'Hohwards',
-      description: 'Responsive e-commerce platform',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
+      description: t.projects.descProject4,
+      image: 'project4/Sources/demo.png',
       link: 'project4/index.html',
-      technologies: ['React', 'Redux', 'Node.js'],
+      technologies: ['HTML', 'CSS', 'JS'],
     },
     {
       title: 'Project 3',
