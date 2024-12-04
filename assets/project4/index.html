@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../img/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwards</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="header" style="background-image: url(./Sources/header.png)">
+        <div class="container">
+            <div class="header-text_p">Запрошуємо вас до магічного світу на</div>
+            <h1 class="header-text">"Новорiчний <span></span>Хогвартс"</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/D0SNBTJwJBk?si=BqqZVhuyA23Ji3gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="header__button" onclick="openForm()" style="background-image: url(./Sources/button.png)">
+                <p class="header__button_p">прийняти участь</p>
+            </div>
+        </div>
+        <div class="container_info">
+            <div class="info" style="background-image: url(./Sources/info.png);">
+                <div class="info__text">
+                    <h1 class="info__text_h">Дорогi маги та магли!</h1>
+                    <div class="info__text_p">Міжнародний ліцей "Діскавері Скул" відкриває портал у казковий світ чарів і запрошує вас на незабутнє свято "Новорічний Хогвартс" , яке відбувається на платформі 9 ¾.</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section1" style="background-image: url(./Sources/bakcground_2section.png);">
+        <div class="section1__section">
+            <div class="section1__left">
+                <h1 class="section1__left-text">Що на вас чекає?</h1>
+                <div class="secrion1__left-under-text">Урочиста частина:</div>
+                <div class="section1__left_p">
+                    <ul>
+                        <li>Теплі привітання з Новим Роком від викладачів-магістрів чарів.</li>
+                        <li>Магічний розподіл шляпою за факультетами Хогвартсу, де ви дізнаєтесь чи ви належите до сміливих Грифіндорців, мудрих Рейвенкловців, доброзичливих Гафелпафів чи амбітних Слізеринців!</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="fade">
+                <div class="section1__right">
+                    <div class="section1__right__text">
+                        <h1 class="section1__right__text_h">Великий новорічний квест "Новорічний Хогвартс":</h1>
+                        <div class="section1__right__text_p">Створіть свою команду, отримайте магічну карту та вирушайте в захоплюючу подорож чарівними локаціями!</div>
+                        <div class="section1__right__img" style="background-image: url(Sources/p.png)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-items">8 магічних локацій для пригод та квесту:</div>
+    <section class="section__items">
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_1.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Лабораторія зіллєваріння </div>
+                <div class="item__text_p">дізнайтеся секрети створення чарівних напоїв.</div>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_2.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Лабораторія Мандрагори</div>
+                <div class="item__text_p">пізнайте мистецтво догляду за магічними рослинами.</div>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_3.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Лабораторія Магловедення</div>
+                <div class="item__text_p">дивіться, як розуміти світ.</div>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_4.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Лабораторія захисту від темних сил</div>
+                <div class="item__text_p">опануйте мистецтво магічного захисту.</div>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_5.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Спортивний турнір з квідичу</div>
+                <div class="item__text_p">відчуйте себе справжнім гравцем легендарної гри!</div>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_6.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Книгосховище</div>
+                <div class="item__text_p">відгадайте магічні загадки серед сторінок чарівних книг.</div>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_7.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Магічний банк та Азкабан</div>
+                <div class="item__text_p">розкрийте таємниці скарбів і спробуйте уникнути магічної пастки.</div>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_8.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Кімната за вимогою з чарівними листами</div>
+                <div class="item__text_p">знайдіть своє особливе послання зі світу магії.</div>
+            </div>
+        </div>
+        <div class="item" >
+            <div class="item__img" style="background-image: url(Sources/item/item_9.png)"></div>
+            <div class="item__text">
+                <div class="item__text_h">Candy Bar, магазинчик та фотозони:</div>
+                <div class="item__text_p">на свято чекають чарівний Candy Bar з ласощами, яскраві фотозони в стилі Нового Року та Хогвартсу, а також окремі зони для відпочинку та ігор.</div>
+            </div>
+        </div>
+    </section>
+    <div class="tech_div">
+        <div class="block__ticket">
+            <div class="radial-blur" style="background-image: url(./Sources/background_ticket.png);"></div>
+            <div class="item-tickets" style="background-image: url(./Sources/tickets.png);"></div>
+        </div>
+    </div>
+
+    <h1 class="section__how_h">Як потрапити?</h1>
+    <section class="section__how">
+        <div class="section__left">
+            <div class="section__left_up">
+                <div class="fade">
+                    <div class="blue__text">
+                        <p>
+                            Зареєструйтесь заздалегідь, щоб отримати свій квиток на платформі 9 ¾ та приєднатися до магічної події року!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section__left__down">
+                <div class="section__left__left">
+                    <div class="left__mark__text"> 📅 Дата:</div>
+                    <div class="left__mark__text">⏰ Час:</div>
+                    <div class="left__mark__text">📍 Місце:</div>
+                    <div class="left__mark__text">💰Вартість:</div>
+                </div>
+                <div class="section__left__right">
+                    <div class="right__text">19 або 26 грудня 2024 </div>
+                    <div class="right__text">Час для 1-4 класів: 10:00-13:00
+                        <span>Час для 5-9 класів: 15:00-18:00</span></div>
+                    <div class="right__text">Міжнародний ліцей "Дискавері Скул" -  вулиця Героїв Дніпра, 33</div>
+                    <div class="right__text">500 грн</div>
+                </div>
+            </div>
+        </div>
+        <div class="section__right">
+            <div class="box" style="background-image: url(./Sources/box.png)"></div>
+            <div class="fade">
+                <div class="blue__text">
+                    <p>Кожен володар магічного білету ГАРАНТОВАНО ОТРИМАЄ НОВОРІЧНІ ПОДАРУНКИ у тематиці "HOGWARTS"</p>
+                </div>
+            </div>
+            <div class="section__right__under-text"> <p>А також додаткову знижку на навчання <span>-15%</span> у разі зарахування до Ліцею.</p></div>
+        </div>
+    </section>
+    <section class="footer" style="background-image: url(./Sources/footer.png)">
+        <div class="footer__text">
+            <div class="footer__text_p">Не пропустіть цей чарівний шанс поринути 
+                <span>у світ магії та святкового настрою разом із нами!</span></div>
+            <div class="footer__text_h">До зустрічі в "Новорічному Хогвартсі"!</div>
+            <div class="footer__button" onclick="openForm()" style="background-image: url(./Sources/button.png)"><p>прийняти участь</p></div>
+        </div>
+    </section>
+</body>
+</html>
