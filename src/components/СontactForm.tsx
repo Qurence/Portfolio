@@ -51,12 +51,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ isModalOpen, setIsModalOpen, 
       }),
     });
 
-    // if (response.ok) {
-    //   alert(translations[currentLang].contactForm.sendMessage); // Сообщение после успешной отправки
-    //   setIsModalOpen(false); // Закрываем модалку после отправки
-    // } else {
-    //   alert(translations[currentLang].contactForm.sendMessage); // Сообщение об ошибке
-    // }
     setIsModalOpen(false); // Закрываем модалку после отправки
   };
 
