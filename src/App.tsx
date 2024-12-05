@@ -209,7 +209,7 @@ function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.5 }}
-              className="flex gap-4"
+              className="flex gap-4 z-11"
             >
               <button
                 className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-colors sm:ml-0 ml-auto mr-auto sm:mr-0"
@@ -251,7 +251,7 @@ function App() {
             </motion.div>
           </div>
           {/* Фон для мобильной версии */}
-          <div className="absolute lg:hidden top-40  w-full h-full z-10">
+          <div className="absolute lg:hidden top-40  w-full">
             <img
               src="img/me-portfolio_mobile.png"
               alt="Background image"
