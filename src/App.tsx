@@ -178,12 +178,12 @@ function App() {
         transition={{ duration: 0.6 }}
       >
         <div className="container mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl ">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="text-purple-400 mb-4 text-center sm:text-left sm:mt-0 mt-80 pt-0"
+              className="text-purple-400 mb-4 text-center sm:text-left sm:mt-0 mt-[0px] pt-0 z-15"
             >
               {t.hero.greeting}
             </motion.p>
@@ -241,29 +241,44 @@ function App() {
               initial={{ opacity: 0, x: 60 }}
               animate={heroInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.5 }}
-              className="absolute hidden lg:block right-40 pr-20 top-12 transform -translate-y-1/2"
+              className="absolute hidden lg:block right-40 pr-20 top-12 transform -translate-y-1/2 mt-12"
             >
               <img
-                src="img/me-portfolio.png"
+                src="img/me-photo.png"
                 alt="Hero image"
-                className="relative w-auto h-[80vh] z-10"
+                className="absolute w-auto h-[80vh] z-20"
+              />
+              <img
+                src="img/me-background.png"
+                alt="Hero image BG"
+                className="relative w-auto h-[80vh] z-0 "
               />
               <motion.img 
                 animate={{ rotate: 360 }}
-                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                className="absolute bottom-20 left-0"
+                transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+                className="absolute bottom-20 right-14"
                 src="img/bg_rotating.png" alt="Rotating image" >
-                
               </motion.img>
             </motion.div>
           </div>
           {/* Фон для мобильной версии */}
-          <div className="absolute lg:hidden top-40  w-full">
+          <div className="absolute lg:hidden top-40 right-1 w-full mr-[16px] max-w-[90vw] overflow-hidden mt-[580px]">
             <img
-              src="img/me-portfolio_mobile.png"
+              src="img/me-photo_mobile.png"
               alt="Background image"
-              className="w-[90vw] h-[60vh] object-cover opacity-90"
+              className="absolute object-cover opacity-100 z-10 mt-[10px] ml-[10px] w-[95%]"
             />
+            <img
+              src="img/me-background_mobile.png"
+              alt="Background image"
+              className="relative object-cover opacity-90"
+            />
+            <motion.img 
+                animate={{ rotate: 360 }}
+                transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+                className="absolute bottom-20 opacity-50"
+                src="img/bg_rotating.png" alt="Rotating image" >
+            </motion.img>
           </div>
         </div>
       </motion.section>
@@ -271,7 +286,7 @@ function App() {
 
 
       {/* Skills Section */}
-      <section id="skills" ref={skillsRef} className="relative min-h-screen flex items-center px-6 sm:mt-0 mt-10">
+      <section id="skills" ref={skillsRef} className="relative min-h-screen flex items-center px-6 sm:mt-0 mt-[530px]">
         <div className="container mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
@@ -309,7 +324,7 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="relative min-h-screen flex items-center px-6 sm:mt-0 mt-10 p-0 landscape:p-10">
+      <section id="projects" className="relative min-h-screen flex items-center px-6 sm:mt-0 mt-0 p-0 landscape:p-10">
         <div className="container mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 80 }}
@@ -332,7 +347,7 @@ function App() {
       </section>
 
       {/* Social Links */}
-      <div className="fixed left-6 bottom-6 flex flex-col gap-4">
+      <div className="fixed left-6 bottom-6 flex flex-col gap-4 z-30">
         {[
           { icon: Github, href: 'https://github.com/Qurence' },
           // { icon: Linkedin, href: '#' },
