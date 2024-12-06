@@ -33,7 +33,7 @@ export const ScrollToTop: React.FC<ScrollToTopProps> = ({ text }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           onClick={scrollToTop}
-          className="fixed right-6 bottom-6 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
+          className="fixed right-6 bottom-6 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors z-30"
         >
           <ArrowUp className="w-4 h-4" />
           {text}

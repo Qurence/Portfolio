@@ -241,7 +241,7 @@ function App() {
               initial={{ opacity: 0, x: 60 }}
               animate={heroInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.5 }}
-              className="absolute hidden lg:block right-40 pr-20 top-12 transform -translate-y-1/2 mt-12"
+              className="absolute hidden 2xl:block right-40 pr-20 top-12 transform -translate-y-1/2 mt-12"
             >
               <img
                 src="img/me-photo.png"
@@ -262,7 +262,7 @@ function App() {
             </motion.div>
           </div>
           {/* Фон для мобильной версии */}
-          <div className="absolute lg:hidden top-40 right-1 w-full mr-[16px] max-w-[90vw] overflow-hidden mt-[580px]">
+          <div className="absolute sm:hidden top-40 right-1 w-full mr-[16px] max-w-[90vw] overflow-hidden mt-[580px]">
             <img
               src="img/me-photo_mobile.png"
               alt="Background image"
