@@ -246,8 +246,15 @@ function App() {
               <img
                 src="img/me-portfolio.png"
                 alt="Hero image"
-                className="w-auto h-[80vh]"
+                className="relative w-auto h-[80vh] z-10"
               />
+              <motion.img 
+                animate={{ rotate: 360 }}
+                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                className="absolute bottom-20 left-0"
+                src="img/bg_rotating.png" alt="Rotating image" >
+                
+              </motion.img>
             </motion.div>
           </div>
           {/* Фон для мобильной версии */}
